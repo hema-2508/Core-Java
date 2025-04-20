@@ -1,10 +1,10 @@
 package com.xworkz.internal;
 
 public class Rain {
-    private String rain;
+    private String condition;
     private String season;
     public void setRain(String condition, String season) {
-    this.rain=rain;
+    this.condition=condition;
     this.season=season;
     }
     @Override public String toString() {
