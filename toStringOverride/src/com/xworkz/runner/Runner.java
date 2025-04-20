@@ -301,6 +301,30 @@ public class Runner {
         System.out.println(automation);
         Chatbot chatbot = new Chatbot("AI Assistant", "Customer Service");
         System.out.println(chatbot);
+
+        Flashlight flashlight1 = new Flashlight();
+        flashlight1.setFlashlight("Surya",1000,true,true);
+        System.out.println(flashlight1);
+        Flashlight flashlight2 = new Flashlight();
+        flashlight2.setFlashlight("Bajaj",1000,true,false);
+        System.out.println(flashlight2);
+        Flashlight flashlight3 = new Flashlight();
+        flashlight3.setFlashlight("Bajaj",1000,true,false);
+        System.out.println(flashlight3);
+        boolean flashlightMatch = flashlight1.equals(flashlight2);
+        boolean flashlightNotMatch = flashlight2.equals(flashlight3);
+        System.out.println("Flashlight Match: "+ flashlightMatch);
+        System.out.println("Flashlight Not Match:" + flashlightNotMatch);
+        Flashlights flashlight9 = new Flashlights("Maglite", 1000, true, true);
+        System.out.println(flashlight9);
+        Flashlights flashlight10 = new Flashlights("Maglite", 1000, true, true);
+        System.out.println(flashlight10);
+        Flashlights flashlight11 = new Flashlights("Fenix", 1200, false, true);
+        System.out.println(flashlight11);
+        boolean flashlightMatches = flashlight9.equals(flashlight10);
+        boolean flashlightNotMatches = flashlight10.equals(flashlight11);
+        System.out.println("Flashlight Match:" + flashlightMatches);
+        System.out.println("Flashlight Not Match: " + flashlightNotMatches);
         
     }
 }
