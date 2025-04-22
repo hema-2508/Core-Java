@@ -7,3 +7,4 @@ public class Machines extends Devices{
     }
 
 }
+
