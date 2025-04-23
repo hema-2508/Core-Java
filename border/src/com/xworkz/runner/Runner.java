@@ -4,11 +4,12 @@ import com.xworkz.external.*;
 import com.xworkz.external1.*;
 import com.xworkz.external2.*;
 import com.xworkz.external3.*;
+import com.xworkz.external4.*;
 import com.xworkz.internal.rules.*;
 import com.xworkz.internal.rules1.*;
 import com.xworkz.internal.rules2.*;
 import com.xworkz.internal.rules3.*;
-
+import com.xworkz.internal.rules4.*;
 
 public class Runner {
     public static void main(String[] args) {
@@ -230,6 +231,62 @@ public class Runner {
         sbi.closeAccount();
         sbi.openAccount();
         sbi.withdraw();
+
+        Microwave microwave = new Microwave();
+        microwave.turnOn();
+        microwave.turnOff();
+        microwave.increaseVolume();
+        microwave.decreaseVolume();
+        microwave.setTimer();
+        microwave.reset();
+        microwave.testMode();
+        microwave.calibrate();
+        microwave.energySavingMode();
+
+        Chrome chrome = new Chrome();
+        chrome.openTab();
+        chrome.closeTab();
+        chrome.refreshPage();
+        chrome.goToURL();
+        chrome.bookmarkPage();
+        chrome.openHistory();
+        chrome.downloadFile();
+        chrome.printPage();
+        chrome.incognitoMode();
+
+        PlayBox playBox = new PlayBox();
+        playBox.startGame();
+        playBox.pauseGame();
+        playBox.saveGame();
+        playBox.loadGame();
+        playBox.exitGame();
+        playBox.connectController();
+        playBox.updateFirmware();
+        playBox.takeScreenshot();
+        playBox.streamGame();
+
+        QuadX drone = new QuadX();
+        drone.takeOff();
+        drone.land();
+        drone.moveLeft();
+        drone.moveRight();
+        drone.ascend();
+        drone.descend();
+        drone.hover();
+        drone.takePhoto();
+        drone.recordVideo();
+
+        PayMate payMate = new PayMate();
+        payMate.initiatePayment();
+        payMate.verifyOTP();
+        payMate.transactionHistory();
+        payMate.refundAmount();
+        payMate.cancelTransaction();
+        payMate.checkBalance();
+        payMate.linkAccount();
+        payMate.generateStatement();
+        payMate.customerSupport();
+
     }
 
 }
