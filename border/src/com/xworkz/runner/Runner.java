@@ -164,20 +164,77 @@ public class Runner {
         razorpays.validate();
 
 
-        VehicleControl car = new Tesla();
-        car.startEngine();
-        car.accelerate();
-        car.fuelStatus();
+        VehicleControl vehicleControl = new Tesla();
+        vehicleControl.startEngine();
+        vehicleControl.accelerate();
+        vehicleControl.fuelStatus();
+        vehicleControl.brake();
+        vehicleControl.honk();
+        vehicleControl.steer();
+        vehicleControl.stopEngine();
+
+        Tesla tesla = new Tesla();
+        tesla.startEngine();
+        tesla.accelerate();
+        tesla.fuelStatus();
+        tesla.brake();
+        tesla.honk();
+        tesla.steer();
+        tesla.stopEngine();
+
+        SmartDevices smartDevices = new Alexa();
+        smartDevices.connect();
+        smartDevices.diagnose();
+        smartDevices.turnOn();
+        smartDevices.update();
+        smartDevices.restart();
+        smartDevices.turnOff();
+        smartDevices.disconnect();
+
+        Alexa alexa = new Alexa();
+        alexa.connect();
+        alexa.diagnose();
+        alexa.turnOn();
+        alexa.update();
+        alexa.restart();
+        alexa.turnOff();
+        alexa.disconnect();
 
         OnlineLearning course = new Coursera();
         course.login();
         course.watchLecture();
         course.checkGrades();
+        course.submitAssignment();
+        course.downloadMaterials();
+        course.joinDiscussion();
+        course.takeQuiz();
+
+        Coursera coursera = new Coursera();
+        coursera.login();
+        coursera.watchLecture();
+        coursera.checkGrades();
+        coursera.submitAssignment();
+        coursera.downloadMaterials();
+        coursera.joinDiscussion();
+        coursera.takeQuiz();
 
         BankOperations bank = new SBI();
         bank.deposit();
         bank.applyLoan();
         bank.getStatement();
+        bank.checkBalance();
+        bank.closeAccount();
+        bank.openAccount();
+        bank.withdraw();
+
+        SBI sbi = new SBI();
+        sbi.deposit();
+        sbi.applyLoan();
+        sbi.getStatement();
+        sbi.checkBalance();
+        sbi.closeAccount();
+        sbi.openAccount();
+        sbi.withdraw();
     }
 
 }
