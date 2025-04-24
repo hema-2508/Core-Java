@@ -10,5 +10,7 @@ public class Runner {
         JDBC jdbc = new MysqlJDBC();
         CSKApp cskApp = new CSKApp(jdbc);
         cskApp.IPL();
+        cskApp.IPL();
+        cskApp.IPL();
     }
 }

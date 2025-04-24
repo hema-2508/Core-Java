@@ -3,15 +3,10 @@ package com.xworkz.runner;
 import com.xworkz.external.*;
 import com.xworkz.external1.*;
 import com.xworkz.external2.*;
-import com.xworkz.external2.Amazon;
-import com.xworkz.external2.GoogleDrive;
-import com.xworkz.external2.HomeAssistant;
-import com.xworkz.external2.Razorpay;
 import com.xworkz.external3.*;
 import com.xworkz.internal.rules.*;
 import com.xworkz.internal.rules1.*;
 import com.xworkz.internal.rules2.*;
-import com.xworkz.internal.rules2.PaymentGateway;
 import com.xworkz.internal.rules3.*;
 
 
