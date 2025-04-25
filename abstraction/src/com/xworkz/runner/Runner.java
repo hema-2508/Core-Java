@@ -8,9 +8,10 @@ import com.xworkz.internal.JDBC;
 public class Runner {
     public static void main(String[] args) {
         JDBC jdbc = new MysqlJDBC();
-        CSKApp cskApp = new CSKApp(jdbc);
+        JDBC jdbc1=new OracleJDBC();
+        CSKApp cskApp = new CSKApp(jdbc1);
+
         cskApp.IPL();
-        cskApp.IPL();
-        cskApp.IPL();
+
     }
 }
