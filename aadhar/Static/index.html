@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aadhar Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eaf3fa;
+            margin: 50px;
+        }
+        form {
+            background-color: white;
+            padding: 25px 30px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .col-md-6 {
+            margin-bottom: 20px;
+        }
+        label.form-label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #0d6efd;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0b5ed7;
+        }
+    </style>
+</head>
+<body>
+<form action="submit", method="post">
+    <div class="col-md-6">
+        <label class="form-label">Aadhaar Number</label>
+        <input type="number" placeholder="Enter the number" name="number">
+    </div>
+    <br>
+    <br>
+    <div>
+        <input type="submit" value="submit">
+    </div>
+</form>
+</body>
+</html>
