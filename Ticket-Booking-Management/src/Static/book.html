@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav.navbar {
+            padding: 15px;
+        }
+
+        form[role="search"] input[type="search"] {
+            border: none;
+            border-radius: 30px;
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            transition: all 0.3s ease;
+            width: 250px;
+        }
+
+        form[role="search"] input[type="search"]:focus {
+            outline: none;
+            background-color: white;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+        }
+
+        form[role="search"] .btn {
+            border-radius: 30px;
+            padding: 10px 20px;
+            margin-left: 5px;
+            background-color: #198754;
+            border: none;
+            transition: background-color 0.3s ease;
+            color: white;
+        }
+
+        form[role="search"] .btn:hover {
+            background-color: #157347;
+        }
+
+        form[action="book"] {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 600px;
+            margin: 30px auto;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        form[action="book"] input[type="text"],
+        form[action="book"] input[type="number"],
+        form[action="book"] input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ced4da;
+            box-sizing: border-box;
+        }
+
+        form[action="book"] label {
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"  style="color:white">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html" style="color:white">Home</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div>
+    <form action="book" method="post">
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" placeholder="Enter your name" name="name">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Movie Name</label>
+            <input type="text" placeholder="Enter the movie name" name="moviename">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Price</label>
+            <input type="number" placeholder="Enter the price" name="price">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Number of tickets</label>
+            <input type="number" placeholder="Enter the number of tickets" name="tickets">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+</body>
+</html>
